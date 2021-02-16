@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Intel Team</string>
+    <string name="sign_in_user">Вход/Регистрация</string>
+    <string name="location_user">Локация/Город</string>
+    <string name="id_tour">Тур/Путешествие</string>
+    <string name="item_tools">Что нужно взять с собой/Принадлежности/Инструменты/Продукты</string>
+    <string name="items_useful_materials">Полезные материалы</string>
+    <string name="text_user_name_header_main">User_Name</string>
+    <string name="text_header_main_settings">Settings</string>
+    <string name="content_description_main_menu_header">Пользователь</string>
 </resources>

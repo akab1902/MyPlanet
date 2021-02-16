@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/sign_in_user"
+              android:id="@+id/id_account_menu"
+              android:icon="@drawable/ic_sign_in">
+        </item>
+        <item android:title="@string/location_user"
+              android:id="@+id/location_menu"
+              android:icon="@drawable/ic_location_user">
+        </item>
+        <item android:title="@string/id_tour"
+            android:id="@+id/tour_menu"
+            android:icon="@drawable/ic_tour">
+        </item>
+        <item android:title="@string/item_tools"
+            android:id="@+id/tools_menu"
+            android:icon="@drawable/ic_tools">
+        </item>
+        <item android:title="@string/items_useful_materials"
+            android:id="@+id/useful_materials_menu"
+            android:icon="@drawable/ic_useful_materials">
+        </item>
+
+    </group>
+
+</menu>
