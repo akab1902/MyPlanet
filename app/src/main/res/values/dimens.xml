@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_main_height">80dp</dimen>
+    <dimen name="dimen_user_name_header_main">16sp</dimen>
+    <dimen name="dimen_setting_header_main">12sp</dimen>
+    <dimen name="margin_header_main_imgV">16dp</dimen>
+    <dimen name="margin_start_header_main_txtV">30dp</dimen>
+    <dimen name="margin_top_header_main_txtV">30dp</dimen>
+</resources>
