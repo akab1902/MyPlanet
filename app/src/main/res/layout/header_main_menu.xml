@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imgV_user_header_main"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/avatar_layout_width"
+        android:layout_height="@dimen/avatar_layout_heigth"
         android:layout_marginStart="@dimen/margin_start_header_main_txtV"
         android:layout_marginTop="@dimen/margin_top_header_main_txtV"
         android:contentDescription="@string/content_description_main_menu_header"
@@ -41,7 +41,6 @@
         android:textColor="@color/colorTextHeaderMain"
         android:textSize="@dimen/dimen_setting_header_main"
         android:layout_marginStart="@dimen/margin_start_header_main_txtV"
-
         app:layout_constraintTop_toBottomOf="@id/txtV_name_user_header_main"
         app:layout_constraintStart_toEndOf="@id/imgV_user_header_main"
         app:layout_constraintBottom_toBottomOf="parent"/>
