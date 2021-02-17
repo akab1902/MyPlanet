@@ -6,4 +6,7 @@
     <dimen name="margin_header_main_imgV">16dp</dimen>
     <dimen name="margin_start_header_main_txtV">30dp</dimen>
     <dimen name="margin_top_header_main_txtV">30dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="avatar_layout_width">30dp</dimen>
+    <dimen name="avatar_layout_heigth">30dp</dimen>
 </resources>

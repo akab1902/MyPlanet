@@ -5,26 +5,44 @@
 
     <group android:checkableBehavior="single">
         <item android:title="@string/personal_page"
-              android:id="@+id/id_personal_page"
+              android:id="@+id/nav_authorization"
               android:icon="@drawable/ic_sign_in">
         </item>
-        <item android:title="@string/location_user"
-              android:id="@+id/location_menu"
-              android:icon="@drawable/ic_location_user">
+        <item android:title="@string/text_find_menu"
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search">
         </item>
         <item android:title="@string/id_tour"
-            android:id="@+id/tour_menu"
+            android:id="@+id/nav_tour"
             android:icon="@drawable/ic_tour">
         </item>
         <item android:title="@string/item_tools"
-            android:id="@+id/tools_menu"
+            android:id="@+id/nav_tools"
             android:icon="@drawable/ic_tools">
         </item>
         <item android:title="@string/items_useful_materials"
-            android:id="@+id/useful_materials_menu"
+            android:id="@+id/nav_useful_materials"
             android:icon="@drawable/ic_useful_materials">
         </item>
-
+        <item android:title="@string/text_menu_calendar"
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_calendar">
+        </item>
+        <item android:title="@string/text_menu_weather"
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/ic_weather">
+        </item>
+        <item android:title="@string/text_menu_history"
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_weather">
+        </item>
+        <item android:title="@string/location_user"
+              android:id="@+id/nav_location"
+              android:icon="@drawable/ic_location_user">
+        </item>
+        <item android:title="@string/text_menu_settings"
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings">
+        </item>
     </group>
-
 </menu>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_authorization">
+    <fragment
+        android:id="@+id/nav_authorization"
+        android:name="kz.jumysbar.intelteam.ui.authorization.AuthorizationActivity"
+        android:label="@string/nav_authorization"
+        tools:layout="@layout/activity_authorization" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="kz.jumysbar.intelteam.ui.find.FindFragment"
+        android:label="@string/nav_find"
+        tools:layout="@layout/fragment_find" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_tour"
+        android:name="kz.jumysbar.intelteam.ui.tour.TourFragment"
+        android:label="@string/nav_tour"
+        tools:layout="@layout/fragment_tour" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="kz.jumysbar.intelteam.ui.tools.ToolsFragment"
+        android:label="@string/nav_tools"
+        tools:layout="@layout/fragment_tools" />
+    <fragment
+        android:id="@+id/nav_useful_materials"
+        android:name="kz.jumysbar.intelteam.ui.usefulmaterial.UsefulMaterialsFragment"
+        android:label="@string/nav_useful_materials"
+        tools:layout="@layout/fragment_useful_materials" />
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="kz.jumysbar.intelteam.ui.calendar.CalendarFragment"
+        android:label="Календарь"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/nav_weather"
+        android:name="kz.jumysbar.intelteam.ui.weather.WeatherFragment"
+        android:label="@string/text_menu_weather"
+        tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="kz.jumysbar.intelteam.ui.history.HistoryFragment"
+        android:label="@string/text_menu_weather"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/nav_location"
+        android:name="kz.jumysbar.intelteam.ui.location.LocationFragment"
+        android:label="@string/text_menu_weather"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="kz.jumysbar.intelteam.ui.settings.SettingsFragment"
+        android:label="@string/text_menu_weather"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

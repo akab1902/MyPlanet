@@ -8,4 +8,16 @@
     <string name="text_user_name_header_main">User_Name</string>
     <string name="text_header_main_settings">Settings</string>
     <string name="content_description_main_menu_header">Пользователь</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_find_menu">Поиск</string>
+    <string name="text_menu_calendar">Календарь</string>
+    <string name="text_menu_weather">Погода</string>
+    <string name="text_menu_history">История</string>
+    <string name="text_menu_settings">Настройки</string>
+    <string name="nav_authorization">Авторизация</string>
+    <string name="nav_find">Поиск</string>
+    <string name="nav_tour">Тур/Путешествие</string>
+    <string name="nav_useful_materials">Полезные материалы</string>
+    <string name="nav_tools">Что нужно взять с собой</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
