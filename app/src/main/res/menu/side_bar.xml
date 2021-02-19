@@ -10,11 +10,9 @@
             android:title="@string/personal_page" />
         <item
             android:id="@+id/nav_search"
-            android:icon="@drawable/ic_search"
             android:title="@string/text_find_menu" />
         <item
             android:id="@+id/nav_tour"
-            android:icon="@drawable/ic_tour"
             android:title="@string/id_tour" />
         <item
             android:id="@+id/nav_tools"
@@ -22,7 +20,6 @@
             android:title="@string/item_tools" />
         <item
             android:id="@+id/nav_useful_materials"
-            android:icon="@drawable/ic_useful_materials"
             android:title="@string/items_useful_materials" />
         <item
             android:id="@+id/nav_calendar"
@@ -30,11 +27,9 @@
             android:title="@string/text_menu_calendar" />
         <item
             android:id="@+id/nav_weather"
-            android:icon="@drawable/ic_weather"
             android:title="@string/text_menu_weather" />
         <item
             android:id="@+id/nav_history"
-            android:icon="@drawable/ic_weather"
             android:title="@string/text_menu_history" />
         <item
             android:id="@+id/nav_location"
@@ -46,7 +41,6 @@
             android:title="@string/text_menu_settings" />
         <item
             android:id="@+id/nav_exit"
-            android:icon="@drawable/ic_exit_auth"
             android:title="@string/exit_auth"
             android:onClick="exitUser"
             />
