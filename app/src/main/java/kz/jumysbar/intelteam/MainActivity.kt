@@ -3,7 +3,8 @@ package kz.jumysbar.intelteam
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
+import android.view.View
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
@@ -17,13 +18,13 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.material.navigation.NavigationView
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
-import kz.jumysbar.intelteam.fragment.PersonalPageFragment
-
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var drawerLayout: DrawerLayout
     private lateinit var appBarConfiguration: AppBarConfiguration
     private var googleSignInClient: GoogleSignInClient? = null
     private var firebaseAuth: FirebaseAuth? = null
@@ -32,14 +33,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
+        drawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
-        //   navView.setNavigationItemSelectedListener(this)
-        drawer_layout.closeDrawers()
+        //   navView.setNavigationItemSelectedListener(this) drawer_layout.closeDrawers()
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_authorization, R.id.nav_search, R.id.nav_tour,
@@ -51,23 +50,21 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-//        nav_view.setNavigationItemSelectedListener (this)
     }
 //    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-////        when(item.itemId){
-//////            R.id.location_menu -> Toast.makeText(this, "location_menu", Toast.LENGTH_SHORT).show()
-//////            R.id.tools_menu -> Toast.makeText(this, "tools_menu", Toast.LENGTH_SHORT).show()
-////            R.id.tour_menu -> Toast.makeText(this, "tour_menu", Toast.LENGTH_SHORT).show()
-////            R.id.useful_materials_menu -> Toast.makeText(
-////                this,
-////                "useful_materials_menu",
-////                Toast.LENGTH_SHORT
-////            ).show()
-//        }
-//        drawer_layout.closeDrawers()
-//        return true
-//    }
-
+//        when(item.itemId){
+//            R.id.location_menu -> Toast.makeText(this, "location_menu", Toast.LENGTH_SHORT).show()
+//            R.id.tools_menu -> Toast.makeText(this, "tools_menu", Toast.LENGTH_SHORT).show()
+//  R.id.tour_menu -> Toast.makeText(this, "tour_menu", Toast.LENGTH_SHORT).show()
+//  R.id.useful_materials_menu -> Toast.makeText(
+//  this,
+// "useful_materials_menu",
+// Toast.LENGTH_SHORT
+// .show()
+// }
+// drawer_layout.closeDrawers()
+//  return true
+// }
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)
@@ -94,7 +91,11 @@ class MainActivity : AppCompatActivity() {
             remove("googleUserID")
             clear()
         }.apply()
-        Toast.makeText(this, "User sign out!", Toast.LENGTH_SHORT).show()
+        val snackBar = Snackbar.make(drawer_layout, getString(R.string.snackbar_exit_auth), 2000)
+        snackBar.animationMode = Snackbar.ANIMATION_MODE_SLIDE
+        val snackTextView =
+            snackBar.view.findViewById<View>(com.google.android.material.R.id.snackbar_text) as TextView
+        snackTextView.textSize = 16f
+        snackBar.show()
     }
 }
-

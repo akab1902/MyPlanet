@@ -1,8 +1,10 @@
 package kz.jumysbar.intelteam.ui.usefulmaterial
 
-import androidx.room.*
-import kz.jumysbar.intelteam.ui.authorization.Member
-
+import androidx.room.Dao
+import androidx.room.Query
+import androidx.room.Insert
+import androidx.room.Delete
+import androidx.room.OnConflictStrategy
 @Dao
 interface UsefulMaterialDao {
     @Query("SELECT * FROM usefulMaterial_table")

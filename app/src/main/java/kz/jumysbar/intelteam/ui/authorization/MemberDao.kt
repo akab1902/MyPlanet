@@ -1,6 +1,10 @@
 package kz.jumysbar.intelteam.ui.authorization
 
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Query
+import androidx.room.Insert
+import androidx.room.Delete
+import androidx.room.OnConflictStrategy
 import kz.jumysbar.intelteam.ui.tour.Tour
 
 @Dao

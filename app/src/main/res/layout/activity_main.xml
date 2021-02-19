@@ -20,7 +20,7 @@
         android:layout_gravity="start"
         android:background="@color/background_toolbar"
         android:fitsSystemWindows="true"
-        android:visibility="gone"
+        android:visibility="visible"
         app:headerLayout="@layout/header_main_menu"
         app:menu="@menu/side_bar" />
 </androidx.drawerlayout.widget.DrawerLayout>
