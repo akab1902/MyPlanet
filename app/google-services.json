@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "464842637746",
+    "firebase_url": "https://myplanetapp-4337b-default-rtdb.firebaseio.com",
     "project_id": "myplanetapp-4337b",
     "storage_bucket": "myplanetapp-4337b.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "464842637746-4rgafvlbm4hbcqqbp9pnkl9k2fv8afgk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kz.jumysbar.intelteam",
+            "certificate_hash": "42786a8dc39a9c89422f50ce1b766a4310926111"
+          }
+        },
         {
           "client_id": "464842637746-faovgpvbtd545jhdh98likc6amuoh6vj.apps.googleusercontent.com",
           "client_type": 3

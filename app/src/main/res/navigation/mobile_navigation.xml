@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_authorization">
+    app:startDestination="@id/nav_search">
     <fragment
         android:id="@+id/nav_authorization"
-        android:name="kz.jumysbar.intelteam.ui.authorization.AuthorizationActivity"
+        android:name="kz.jumysbar.intelteam.ui.authorization.AuthorizationFragment"
         android:label="@string/nav_authorization"
-        tools:layout="@layout/activity_authorization" >
+        tools:layout="@layout/authorization_fragment" >
     </fragment>
     <fragment
         android:id="@+id/nav_search"

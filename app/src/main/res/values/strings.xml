@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Intel Team</string>
+    <string name="app_name">My Planet</string>
     <string name="personal_page">Личный кабинет</string>
     <string name="location_user">Локация/Город</string>
     <string name="id_tour">Тур/Путешествие</string>
@@ -20,4 +20,8 @@
     <string name="nav_useful_materials">Полезные материалы</string>
     <string name="nav_tools">Что нужно взять с собой</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="auth_title">Авторизация</string>
+    <string name="personalCabinet">Личный кабинет</string>
+    <string name="login_with_google">Войти с помощью Google</string>
+    <string name="exit_auth">Выйти</string>
 </resources>
