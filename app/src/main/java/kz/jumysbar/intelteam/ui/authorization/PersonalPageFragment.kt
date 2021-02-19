@@ -41,14 +41,12 @@ class PersonalPageFragment : Fragment(R.layout.personal_page_fragment) {
         } else {
             prefsUserId
         }
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         recognizeUser(userId)
     }
-
 
     private fun recognizeUser(userId: String) {
         val ref = db.getReference("users").child(userId)

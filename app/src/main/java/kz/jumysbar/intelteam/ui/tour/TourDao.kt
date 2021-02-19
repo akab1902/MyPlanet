@@ -1,6 +1,9 @@
 package kz.jumysbar.intelteam.ui.tour
-
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Query
+import androidx.room.OnConflictStrategy
+import androidx.room.Delete
+import androidx.room.Insert
 
 @Dao
 interface TourDao {

@@ -24,4 +24,8 @@
     <string name="personalCabinet">Личный кабинет</string>
     <string name="login_with_google">Войти с помощью Google</string>
     <string name="exit_auth">Выйти</string>
+    
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="snackbar_exit_auth">User sign out!</string>
 </resources>
