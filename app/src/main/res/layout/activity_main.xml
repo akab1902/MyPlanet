@@ -21,6 +21,8 @@
         android:background="@color/background_toolbar"
         android:fitsSystemWindows="true"
         android:visibility="visible"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white"
         app:headerLayout="@layout/header_main_menu"
         app:menu="@menu/side_bar" />
 </androidx.drawerlayout.widget.DrawerLayout>
