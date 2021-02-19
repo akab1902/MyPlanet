@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/personalPageFragmentBgColor">
+
+    <TextView
+        android:id="@+id/personalPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="@string/personalCabinet"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userAvatar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/personalPageTitle"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personalPageTitle"
+        android:layout_marginTop="33dp"
+        android:layout_toEndOf="@id/userAvatar"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/userAvatar"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/infoBlock"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:layout_below="@id/userAvatar"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_rectangle_personal_page"
+        >
+
+        <TextView
+        android:id="@+id/userAgeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Возраст:"
+        style="@style/personalPageTextViewsStyle"
+
+        />
+        <TextView
+            android:id="@+id/userSexTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userAgeTitle"
+            android:text="Пол:"
+            style="@style/personalPageTextViewsStyle"
+            />
+        <TextView
+            android:id="@+id/userWorkTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userSexTitle"
+            android:text="Место работы:"
+            style="@style/personalPageTextViewsStyle"
+            />
+        <TextView
+            android:id="@+id/userLevelTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userWorkTitle"
+            android:text="Уровень:"
+            style="@style/personalPageTextViewsStyle"
+            />
+        <TextView
+            android:id="@+id/userBallTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userLevelTitle"
+            android:text="Баллы:"
+            style="@style/personalPageTextViewsStyle"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aboutTheUser"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:layout_below="@id/infoBlock"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/ic_rectangle_personal_page"
+        >
+
+        <TextView
+            android:id="@+id/aboutTheUserTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="О себе:"
+            style="@style/personalPageTextViewsStyle"
+            />
+
+        <TextView
+            android:id="@+id/contentUserTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutTheUserTitle"
+            android:text="Путешественник из Казахстана,
+            занимаюсь этим 4 года. Побывал во многих
+            странах Юго-Восточной Азии и Западной Европы
+            бла бла бла :)"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginVertical="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
