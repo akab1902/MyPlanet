@@ -1,14 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.tour.TourFragment">
 
-   <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"
-       android:textSize="45sp"/>
 
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="87dp">
+
+      <ImageButton
+          android:id="@+id/go_back_btn"
+          android:layout_width="28dp"
+          android:layout_height="28dp"
+          android:layout_marginStart="8dp"
+          android:layout_marginTop="25dp"
+          android:background="@drawable/left_arrow"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+          android:id="@+id/tours_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="30dp"
+          android:layout_marginTop="18dp"
+          android:fontFamily="@font/nunito_semibold"
+          android:text="Туры/путешествия"
+          android:textColor="@color/black"
+          android:textSize="28sp"
+          app:layout_constraintStart_toEndOf="@+id/go_back_btn"
+          app:layout_constraintTop_toTopOf="parent" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recycler_view_tour"
+          android:layout_width="413dp"
+          android:layout_height="645dp"
+          android:layout_marginTop="85dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:listitem="@layout/item_tour" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
+</ScrollView>
