@@ -31,5 +31,4 @@
 
     <string name="email_subject">Тема</string>
     <string name="email_text">Мое сообщение ...</string>
-    <string name="default_web_client_id">default</string>
 </resources>
