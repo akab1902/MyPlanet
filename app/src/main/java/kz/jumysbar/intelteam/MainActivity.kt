@@ -1,5 +1,7 @@
 package kz.jumysbar.intelteam
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -21,6 +23,7 @@ import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.app_bar_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -50,6 +53,10 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        fab.setOnClickListener {
+            sendEmail()
+        }
     }
 //    override fun onNavigationItemSelected(item: MenuItem): Boolean {
 //        when(item.itemId){
@@ -98,4 +105,13 @@ class MainActivity : AppCompatActivity() {
         snackTextView.textSize = 16f
         snackBar.show()
     }
+
+    fun sendEmail(){
+        val email = Intent(Intent.ACTION_SENDTO)
+        email.data = Uri.parse("mailto:jumysbar@gmail.com")
+        email.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject))
+        email.putExtra(Intent.EXTRA_TEXT, getString(R.string.email_text))
+        startActivity(email)
+    }
+
 }
