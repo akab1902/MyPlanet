@@ -6,8 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.andrewjapar.rangedatepicker.CalendarPicker
-import kotlinx.android.synthetic.main.fragment_calendar.*
 import kz.jumysbar.intelteam.R
 import java.util.*
 
@@ -23,23 +21,8 @@ class CalendarFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val startDate = Calendar.getInstance(TimeZone.getDefault(), Locale.getDefault())
-        val endDate = Calendar.getInstance(TimeZone.getDefault(), Locale.getDefault())
-        endDate.add(Calendar.MONTH, 10) //можно поменять последний месяц для выбора даты
 
-        calendar_view.apply {
-            setMode(CalendarPicker.SelectionMode.RANGE)
-            setRangeDate(startDate.time, endDate.time)
-            setSelectionDate(startDate.time) //начало выбора даты
-        }
-        calendar_view.setOnRangeSelectedListener { startDate, endDate, startLabel, endLabel ->
-            departure_date.text = startLabel
-            return_date.text = endLabel
-        }
 
-        calendar_view.setOnStartSelectedListener { startDate, label ->
-            departure_date.text = label
-            return_date.text = "-"
-        }
+
     }
 }
