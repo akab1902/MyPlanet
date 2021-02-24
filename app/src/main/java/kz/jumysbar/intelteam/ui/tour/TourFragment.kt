@@ -18,15 +18,15 @@ class TourFragment : Fragment(R.layout.fragment_tour) {
     override fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
         super.onViewCreated(itemView, savedInstanceState)
         val images = listOf<imageForTour>(
-                imageForTour("Кайынды","Южный Казахстан", R.drawable.kayndy),
-                imageForTour("Туркестан","Южный Казахстан", R.drawable.turkestan),
-                imageForTour("Иссык куль","Кыргызстан", R.drawable.issyk),
-                imageForTour("Самарканд","Узбекистан", R.drawable.samarkand),
-                imageForTour("Санкт-Петербург","Россия", R.drawable.st_petersburg)
+                imageForTour("Кайынды", "Южный Казахстан", R.drawable.kayndy),
+                imageForTour("Туркестан", "Южный Казахстан", R.drawable.turkestan),
+                imageForTour("Иссык куль", "Кыргызстан", R.drawable.issyk),
+                imageForTour("Самарканд", "Узбекистан", R.drawable.samarkand),
+                imageForTour("Санкт-Петербург", "Россия", R.drawable.st_petersburg)
         )
 
         recycler_view_tour.apply {
-            layoutManager= LinearLayoutManager(activity)
+            layoutManager = LinearLayoutManager(activity)
             adapter = activity?.applicationContext?.let { RecyclerAdapter(it, images) }
         }
     }

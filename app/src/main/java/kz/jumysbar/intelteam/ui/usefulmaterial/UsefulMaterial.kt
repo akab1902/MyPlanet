@@ -14,7 +14,7 @@ data class UsefulMaterial(
     @ColumnInfo(name = "type")
     val type: String,
     @ColumnInfo(name = "photo")
-    val photo: String,
+    val photo: String, // need to add converter of photo
     @ColumnInfo(name = "description")
     val description: String,
     @ColumnInfo(name = "cost")

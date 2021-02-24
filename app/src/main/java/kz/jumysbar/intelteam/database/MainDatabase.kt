@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import kz.jumysbar.intelteam.ui.authorization.Member
 import kz.jumysbar.intelteam.ui.authorization.MemberDao
 import kz.jumysbar.intelteam.ui.tour.Tour
@@ -12,6 +13,7 @@ import kz.jumysbar.intelteam.ui.usefulmaterial.UsefulMaterial
 import kz.jumysbar.intelteam.ui.usefulmaterial.UsefulMaterialDao
 
 @Database(entities = [Tour::class, Member::class, UsefulMaterial::class], version = 1, exportSchema = false)
+@TypeConverters(Converters::class)
 abstract class MainDatabase : RoomDatabase() {
 
     abstract fun tourDao(): TourDao

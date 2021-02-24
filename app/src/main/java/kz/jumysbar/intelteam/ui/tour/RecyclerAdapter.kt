@@ -9,16 +9,15 @@ import kotlinx.android.synthetic.main.item_tour.view.*
 import kz.jumysbar.intelteam.R
 
 class RecyclerAdapter(
-    private val context : Context,
-    private val images : List <imageForTour>
-): RecyclerView.Adapter<RecyclerAdapter.ImageViewHolder>() {
+    private val context: Context,
+    private val images: List <imageForTour>
+) : RecyclerView.Adapter<RecyclerAdapter.ImageViewHolder>() {
 
-
-    class ImageViewHolder(view: View): RecyclerView.ViewHolder(view){
+    class ImageViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val img = itemView.img_tour
         val place = itemView.placeOfTour
         val country = itemView.countryOfTour
-        fun bindView(image: imageForTour){
+        fun bindView(image: imageForTour) {
             img.setImageResource(image.imgForTour)
             place.text = image.place
             country.text = image.country

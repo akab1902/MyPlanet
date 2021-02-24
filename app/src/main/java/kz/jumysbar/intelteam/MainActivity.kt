@@ -3,6 +3,7 @@ package kz.jumysbar.intelteam
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -106,12 +107,11 @@ class MainActivity : AppCompatActivity() {
         snackBar.show()
     }
 
-    fun sendEmail(){
+    fun sendEmail() {
         val email = Intent(Intent.ACTION_SENDTO)
         email.data = Uri.parse("mailto:jumysbar@gmail.com")
         email.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject))
         email.putExtra(Intent.EXTRA_TEXT, getString(R.string.email_text))
         startActivity(email)
     }
-
 }

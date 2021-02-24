@@ -10,7 +10,7 @@ import kz.jumysbar.intelteam.ui.tour.Tour
 @Dao
 interface MemberDao {
     @Query("SELECT * FROM member_table")
-    fun getAll(): MutableList<Member>
+    fun getAll(): List<Member>
 
     @Query("SELECT * FROM member_table WHERE id=:id ")
     fun loadbyId(id: String): Member
@@ -19,10 +19,13 @@ interface MemberDao {
     fun getCount(): Int
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertAll(member: MutableList<Member>)
+    fun insertAll(member: List<Member>)
 
     @Delete
     fun delete(tour: Tour)
+
+    @Query("DELETE FROM member_table")
+    fun deleteAll()
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertMember(member: Member)
