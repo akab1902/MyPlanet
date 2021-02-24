@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.calendar.CalendarFragment">
 
+
     <TextView
         android:id="@+id/departure_title"
         android:layout_width="0dp"

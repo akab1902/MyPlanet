@@ -23,14 +23,16 @@ class CalendarFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
         val startDate = Calendar.getInstance(TimeZone.getDefault(), Locale.getDefault())
         val endDate = Calendar.getInstance(TimeZone.getDefault(), Locale.getDefault())
-        endDate.add(Calendar.MONTH, 10) //можно поменять последний месяц для выбора даты
+        endDate.add(Calendar.MONTH, 6) // Add 6 months ahead from current date
 
         calendar_view.apply {
-            setMode(CalendarPicker.SelectionMode.RANGE)
+            setMode(CalendarPicker.SelectionMode.RANGE) // You can set it via XML
             setRangeDate(startDate.time, endDate.time)
-            setSelectionDate(startDate.time) //начало выбора даты
+            setSelectionDate(startDate.time)
         }
         calendar_view.setOnRangeSelectedListener { startDate, endDate, startLabel, endLabel ->
             departure_date.text = startLabel
@@ -41,5 +43,6 @@ class CalendarFragment : Fragment() {
             departure_date.text = label
             return_date.text = "-"
         }
+
     }
 }
