@@ -24,6 +24,9 @@ interface MemberDao {
     @Delete
     fun delete(tour: Tour)
 
+    @Query("DELETE FROM member_table")
+    fun deleteAll()
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertMember(member: Member)
 }

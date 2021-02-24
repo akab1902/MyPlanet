@@ -22,6 +22,9 @@ interface UsefulMaterialDao {
     @Delete
     fun delete(material: UsefulMaterial)
 
+    @Query("DELETE FROM usefulMaterial_table")
+    fun deleteAll()
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertUsefulMaterial(material: UsefulMaterial)
 }

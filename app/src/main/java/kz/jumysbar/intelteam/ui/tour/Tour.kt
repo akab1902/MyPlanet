@@ -19,15 +19,15 @@ val photo: String, // need to add converter of photo
     @ColumnInfo(name = "description")
 val description: String,
     @ColumnInfo(name = "date")
-val date: Date, // need to check correctness of converter
+val date: Date,
     @ColumnInfo(name = "goal")
 val goal: String,
     @ColumnInfo(name = "type")
 val type: String,
     @ColumnInfo(name = "place")
-val place: List<String>, // need to check correctness of converter
+val place: List<String>,
     @ColumnInfo(name = "location")
-val location: List<String>, // need to check correctness of converter
+val location: List<String>,
     @ColumnInfo(name = "cost")
 val cost: Float,
     @ColumnInfo(name = "length")
@@ -39,9 +39,9 @@ val visa: Boolean,
     @ColumnInfo(name = "difficulty")
 val difficulty: String,
     @ColumnInfo(name = "members")
-val members: List<Member>, // need to check correctness of converter
+val members: List<Member>,
     @ColumnInfo(name = "usefulMaterials")
-val usefulMaterials: List<UsefulMaterial>, // need to check correctness of converter
+val usefulMaterials: List<UsefulMaterial>,
     @ColumnInfo(name = "maxMembers")
 val maxMembers: Int,
     @ColumnInfo(name = "tourStatus")
