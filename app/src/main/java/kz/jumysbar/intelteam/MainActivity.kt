@@ -106,12 +106,11 @@ class MainActivity : AppCompatActivity() {
         snackBar.show()
     }
 
-    fun sendEmail(){
+    fun sendEmail() {
         val email = Intent(Intent.ACTION_SENDTO)
         email.data = Uri.parse("mailto:jumysbar@gmail.com")
         email.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject))
         email.putExtra(Intent.EXTRA_TEXT, getString(R.string.email_text))
         startActivity(email)
     }
-
 }

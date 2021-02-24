@@ -3,6 +3,7 @@ package kz.jumysbar.intelteam.ui.authorization
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.util.*
 
 @Entity(tableName = "member_table")
 data class Member(
@@ -12,7 +13,7 @@ data class Member(
     @ColumnInfo(name = "name")
     val name: String,
     @ColumnInfo(name = "dateOfBirth")
-    val dateOfBirth: String, // need to change to Date and add converter
+    val dateOfBirth: Date, // need to change to Date and add converter
     @ColumnInfo(name = "sex")
     val sex: String,
     @ColumnInfo(name = "level")
@@ -22,9 +23,9 @@ data class Member(
     @ColumnInfo(name = "photo")
     val photo: String,
     @ColumnInfo(name = "dateOfAdd")
-    val dateOfAdd: String, // need to change to Date and add converter
+    val dateOfAdd: Date, // need to change to Date and add converter
     @ColumnInfo(name = "dateOfDel")
-    val dateOfDel: String,
+    val dateOfDel: Date, // need to change to Date and add converter
     @ColumnInfo(name = "placeWork")
     val placeWork: String,
     @ColumnInfo(name = "hobbies")
@@ -32,7 +33,7 @@ data class Member(
     @ColumnInfo(name = "descAboutYourself")
     val descAboutYourself: String,
     @ColumnInfo(name = "visa")
-    val visa: String, // need change to List
+    val visa: List<String>, // need change to List
     @ColumnInfo(name = "score")
     val score: Int
 )
