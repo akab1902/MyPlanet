@@ -8,7 +8,7 @@ import androidx.room.Insert
 @Dao
 interface TourDao {
     @Query("SELECT * FROM tour_table")
-    fun getAll(): MutableList<Tour>
+    fun getAll(): List<Tour>
 
     @Query("SELECT * FROM tour_table WHERE id=:id ")
     fun loadbyId(id: String): Tour
@@ -17,7 +17,7 @@ interface TourDao {
     fun getCount(): Int
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertAll(tour: MutableList<Tour>)
+    fun insertAll(tour: List<Tour>)
 
     @Delete
     fun delete(tour: Tour)

@@ -8,7 +8,7 @@ import androidx.room.OnConflictStrategy
 @Dao
 interface UsefulMaterialDao {
     @Query("SELECT * FROM usefulMaterial_table")
-    fun getAll(): MutableList<UsefulMaterial>
+    fun getAll(): List<UsefulMaterial>
 
     @Query("SELECT * FROM usefulMaterial_table WHERE id=:id ")
     fun loadbyId(id: String): UsefulMaterial
@@ -17,7 +17,7 @@ interface UsefulMaterialDao {
     fun getCount(): Int
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertAll(material: MutableList<UsefulMaterial>)
+    fun insertAll(material: List<UsefulMaterial>)
 
     @Delete
     fun delete(material: UsefulMaterial)
