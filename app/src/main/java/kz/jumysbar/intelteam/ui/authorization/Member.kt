@@ -13,7 +13,7 @@ data class Member(
     @ColumnInfo(name = "name")
     val name: String,
     @ColumnInfo(name = "dateOfBirth")
-    val dateOfBirth: Date, // need to change to Date and add converter
+    val dateOfBirth: Date, // need to check correctness of converter
     @ColumnInfo(name = "sex")
     val sex: String,
     @ColumnInfo(name = "level")
@@ -21,11 +21,11 @@ data class Member(
     @ColumnInfo(name = "city")
     val city: String,
     @ColumnInfo(name = "photo")
-    val photo: String,
+    val photo: String, // need to add converter of photo
     @ColumnInfo(name = "dateOfAdd")
-    val dateOfAdd: Date, // need to change to Date and add converter
+    val dateOfAdd: Date, // need to check correctness of converter
     @ColumnInfo(name = "dateOfDel")
-    val dateOfDel: Date, // need to change to Date and add converter
+    val dateOfDel: Date, // need to check correctness of converter
     @ColumnInfo(name = "placeWork")
     val placeWork: String,
     @ColumnInfo(name = "hobbies")
@@ -33,7 +33,7 @@ data class Member(
     @ColumnInfo(name = "descAboutYourself")
     val descAboutYourself: String,
     @ColumnInfo(name = "visa")
-    val visa: List<String>, // need change to List
+    val visa: List<String>, // need to check correctness of converter
     @ColumnInfo(name = "score")
     val score: Int
 )

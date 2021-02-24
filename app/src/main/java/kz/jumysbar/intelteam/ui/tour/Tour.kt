@@ -15,19 +15,19 @@ val id: Int = 0,
     @ColumnInfo(name = "name")
 val name: String,
     @ColumnInfo(name = "photo")
-val photo: String,
+val photo: String, // need to add converter of photo
     @ColumnInfo(name = "description")
 val description: String,
     @ColumnInfo(name = "date")
-val date: Date, // check
+val date: Date, // need to check correctness of converter
     @ColumnInfo(name = "goal")
 val goal: String,
     @ColumnInfo(name = "type")
 val type: String,
     @ColumnInfo(name = "place")
-val place: List<String>, // need change to List
+val place: List<String>, // need to check correctness of converter
     @ColumnInfo(name = "location")
-val location: List<String>, // need change to List
+val location: List<String>, // need to check correctness of converter
     @ColumnInfo(name = "cost")
 val cost: Float,
     @ColumnInfo(name = "length")
@@ -39,9 +39,9 @@ val visa: Boolean,
     @ColumnInfo(name = "difficulty")
 val difficulty: String,
     @ColumnInfo(name = "members")
-val members: List<Member>, // need to change to List<Member>
+val members: List<Member>, // need to check correctness of converter
     @ColumnInfo(name = "usefulMaterials")
-val usefulMaterials: List<UsefulMaterial>, // need to change List<UsefulMaterial>
+val usefulMaterials: List<UsefulMaterial>, // need to check correctness of converter
     @ColumnInfo(name = "maxMembers")
 val maxMembers: Int,
     @ColumnInfo(name = "tourStatus")
